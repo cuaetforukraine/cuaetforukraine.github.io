@@ -1,1 +1,143 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Ukrainians Stuck in Hungary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #0056A0;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .banner {
+            width: 100%;
+            height: auto;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        section {
+            margin: 2rem 0;
+        }
+        h1, h2 {
+            color: #0056A0;
+        }
+        a {
+            color: #0056A0;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background: #f4f4f4;
+            padding: 1rem;
+            text-align: center;
+        }
+        .counter {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #0056A0;
+        }
+        .side-by-side {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+        }
+        .side-by-side img {
+            flex: 1;
+            max-width: 100%;
+            height: auto;
+        }
+        .side-by-side p {
+            flex: 2;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Support Ukrainians Stuck in Hungary</h1>
+    </header>
+
+    <div class="container">
+        <img src="images/banner.jpg" alt="Support Ukrainians Banner" class="banner"> <!-- Replace with your banner image -->
+
+        <section>
+            <h2>Overview</h2>
+            <p>A new law has come into force in Hungary which threatens to push thousands of Ukrainian refugees onto the streets or back to Ukraine. More than 30,000 Ukrainians are stuck in Hungary and need our help.</p>
+            <p>The solution is to relocate them to Canada through the Canada-Ukraine Authorization for Emergency Travel (CUAET) program. This project aims to provide support to Ukrainians currently stranded in Hungary and assist them in their journey to Canada through the CUAET program. We are dedicated to helping those in need during these challenging times.</p>
+            <p>For many, the change will result in job losses and impact school enrolment, jeopardizing the positive integration achievements obtained so far.</p>
+        </section>
+
+        <section>
+            <h2>How You Can Help</h2>
+            <ul>
+                <li><strong>Donate:</strong> Your financial contributions will help cover essential expenses such as travel, accommodation, and legal fees for Ukrainians seeking relocation. <a href="#">Donate Here</a> <!-- Replace with donation link --></li>
+                <li><strong>Volunteer:</strong> We are looking for volunteers to help with various tasks including legal assistance, translation services, and logistical support. <a href="#">Sign Up to Volunteer</a> <!-- Replace with volunteer sign-up link --></li>
+                <li><strong>Spread the Word:</strong> Share our mission on social media to increase awareness and attract more support. <br>
+                    <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>About the CUAET Program</h2>
+            <p>The Canada-Ukraine Authorization for Emergency Travel (CUAET) program allows Ukrainians to travel to Canada temporarily during the ongoing crisis. This initiative provides a pathway for those in need of urgent protection and safety.</p>
+            <p><strong>Benefits of the CUAET Program:</strong></p>
+            <ul>
+                <li><strong>Temporary Residency:</strong> Ukrainians can stay in Canada for up to three years, providing them with a safe haven during the crisis.</li>
+                <li><strong>Access to Services:</strong> Beneficiaries can access health care, education, and other essential services during their stay in Canada.</li>
+                <li><strong>Work Opportunities:</strong> The program allows individuals to work in Canada, helping them support themselves and contribute to their new community.</li>
+                <li><strong>Family Reunification:</strong> Eligible individuals can include family members in their application, facilitating family reunification and support.</li>
+                <li><strong>Pathway to Permanent Residency:</strong> The program may offer pathways to permanent residency for those who wish to remain in Canada long-term.</li>
+                <li><strong>Financial Aid:</strong> The program provides financial assistance of up to $3,500 per family to help with relocation expenses.</li>
+            </ul>
+            <div class="side-by-side">
+                <p>For many Ukrainians, the CUAET program has been a lifeline, successfully helping thousands find safety and a new beginning in Canada. Our team of immigration lawyers and experts is dedicated to providing personalized support to ensure a smooth relocation process. We offer comprehensive services including application assistance, legal advice, and guidance on integrating into Canadian society. Our expertise is crucial in navigating the complexities of the program and maximizing the chances of a successful relocation.</p>
+                <img src="images/immigration-experts.jpg" alt="Immigration Experts"> <!-- Replace with an image of immigration experts -->
+            </div>
+            <p>For more information about the CUAET program, visit the <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/application/temporary-resident/visa.html" target="_blank">official Canadian government page</a>.</p>
+        </section>
+
+        <section>
+            <h2>Our Impact</h2>
+            <p>We have successfully reached and helped <span id="family-counter" class="counter">0</span> families so far.</p>
+            <img src="images/success-stories.jpg" alt="Success Stories"> <!-- Replace with an image representing success stories -->
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need more information, please reach out to us:</p>
+            <p>Email: <a href="mailto:support@example.com">support@example.com</a></p>
+            <p>Phone: +1-234-567-890</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Support Ukrainians Stuck in Hungary. This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
+    </footer>
+
+    <script>
+        // Example counter value; you would update this with actual data.
+        let familiesHelped = 123; // Replace with the actual number of families helped
+        document.getElementById('family-counter').innerText = familiesHelped;
+    </script>
+</body>
+</html>
