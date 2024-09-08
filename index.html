@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ukrainian Relocation to Canada</title>
+    <title>Ukrainians Relocation to Canada</title>
     <style>
         * {
             margin: 0;
@@ -13,6 +13,8 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
+            background-color: #f0f4f8;
+            color: #333;
         }
         header {
             background-image: url('header-banner.jpg');
@@ -20,22 +22,26 @@
             background-position: center;
             background-repeat: no-repeat;
             color: #fff;
-            padding: 3rem;
+            padding: 4rem 2rem;
             text-align: center;
+            position: relative;
         }
-        nav {
+        header nav {
+            position: absolute;
+            top: 1rem;
+            left: 0;
+            right: 0;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.5);
             padding: 1rem;
-            background-color: #333;
         }
         nav ul {
             display: flex;
             list-style: none;
         }
         nav li {
-            margin-right: 1rem;
+            margin: 0 1rem;
         }
         nav a {
             color: #fff;
@@ -47,22 +53,40 @@
         nav a:hover {
             background-color: #555;
         }
+        .flags {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            display: flex;
+        }
+        .flags img {
+            width: 4rem;
+            height: auto;
+            margin-left: 0.5rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .flags img:hover {
+            transform: scale(1.1);
+        }
         main {
-            padding: 3rem;
-            max-width: 800px;
+            padding: 3rem 1rem;
+            max-width: 1200px;
             margin: 0 auto;
         }
         section {
-            background-color: #f7f7f7;
-            padding: 3rem;
+            background-color: #fff;
+            padding: 2rem;
             margin-bottom: 2rem;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         h1, h2 {
             text-align: center;
+            margin-bottom: 1rem;
         }
         h1 {
-            margin-top: 0;
+            color: #4CAF50;
         }
         button {
             background-color: #4CAF50;
@@ -72,40 +96,38 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            display: block;
+            margin: 1rem auto;
         }
         button:hover {
             background-color: #3e8e41;
         }
         .social-media {
             text-align: center;
-            margin-top: 2rem;
+            margin: 2rem 0;
         }
         .social-media a {
             color: #333;
             margin: 0 0.5rem;
+            text-decoration: none;
         }
         .social-media a:hover {
             color: #4CAF50;
         }
-        .email-form {
-            background-color: #f7f7f7;
-            padding: 3rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
         .email-form label {
             display: block;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
         }
         .email-form input[type="text"], .email-form input[type="email"], .email-form textarea {
-            width: 100%;
+            width: calc(100% - 1rem);
             padding: 0.5rem;
-            border: 1px solid #ccc;
+            border: 1px solid #ddd;
             border-radius: 5px;
             margin-bottom: 1rem;
         }
         .email-form textarea {
-            height: 10rem;
+            height: 8rem;
         }
         .email-form input[type="submit"] {
             background-color: #4CAF50;
@@ -119,23 +141,15 @@
         .email-form input[type="submit"]:hover {
             background-color: #3e8e41;
         }
-        .flags {
-            display: flex;
-            justify-content: flex-end;
-        }
-        .flags img {
-            width: 5rem;
-            height: auto;
-            margin-left: 1rem;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-        .flags img:hover {
-            transform: scale(1.1);
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #333;
+            color: #fff;
         }
     </style>
 </head>
-<body onload="window.onload()">
+<body>
     <header>
         <nav>
             <ul>
@@ -152,7 +166,7 @@
     </header>
     <main>
         <section id="hero">
-            <h1>Welcome to Ukrainian Relocation to Canada</h1>
+            <h1>Welcome to Ukrainians Relocation to Canada</h1>
             <p>We help Ukrainians in Hungary to relocate to Canada through the CUAET program. This program offers a pathway to work and eventually permanent residency in Canada for eligible Ukrainian citizens.</p>
             <button>Learn More</button>
         </section>
@@ -169,6 +183,7 @@
                 <li><strong>Eventual permanent residency:</strong> After working in Canada for a certain period, eligible applicants can apply for permanent residency.</li>
                 <li><strong>Access to healthcare and education:</strong> CUAET program participants have access to Canadian healthcare and education systems, ensuring a smooth transition to their new life in Canada.</li>
                 <li><strong>Faster processing times:</strong> The CUAET program offers faster processing times compared to regular work permit applications, allowing Ukrainians to start their new life in Canada sooner.</li>
+                <li><strong>Financial aid:</strong> The CUAET program offers financial aid. families are expected to receive CAN$3,000 for each adult (18 or older) and CAN$1,500 for each child (17 and under)</li>
             </ul>
         </section>
         <section id="resources">
@@ -194,8 +209,10 @@
             </form>
         </section>
     </main>
-    <div id="visitorCount">0</div>
-    <div id="familiesReached">0</div>
+    <footer>
+        <p>Visitor Count: <span id="visitorCount">0</span></p>
+        <p>Families Reached: <span id="familiesReached">0</span></p>
+    </footer>
     <script>
         let visitorCount = 200;
         let familiesReached = 5;
