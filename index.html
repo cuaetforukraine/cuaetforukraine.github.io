@@ -1,232 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Ukrainians Relocation to Canada</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f0f4f8;
-            color: #333;
-        }
-        header {
-            background-image: url('header-banner.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: #fff;
-            padding: 4rem 2rem;
-            text-align: center;
-            position: relative;
-        }
-        header nav {
-            position: absolute;
-            top: 1rem;
-            left: 0;
-            right: 0;
-            display: flex;
-            justify-content: center;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 1rem;
-        }
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        nav li {
-            margin: 0 1rem;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        nav a:hover {
-            background-color: #555;
-        }
-        .flags {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            display: flex;
-        }
-        .flags img {
-            width: 4rem;
-            height: auto;
-            margin-left: 0.5rem;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-        .flags img:hover {
-            transform: scale(1.1);
-        }
-        main {
-            padding: 3rem 1rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        section {
-            background-color: #fff;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-        h1 {
-            color: #4CAF50;
-        }
-        button {
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            display: block;
-            margin: 1rem auto;
-        }
-        button:hover {
-            background-color: #3e8e41;
-        }
-        .social-media {
-            text-align: center;
-            margin: 2rem 0;
-        }
-        .social-media a {
-            color: #333;
-            margin: 0 0.5rem;
-            text-decoration: none;
-        }
-        .social-media a:hover {
-            color: #4CAF50;
-        }
-        .email-form label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: bold;
-        }
-        .email-form input[type="text"], .email-form input[type="email"], .email-form textarea {
-            width: calc(100% - 1rem);
-            padding: 0.5rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin-bottom: 1rem;
-        }
-        .email-form textarea {
-            height: 8rem;
-        }
-        .email-form input[type="submit"] {
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .email-form input[type="submit"]:hover {
-            background-color: #3e8e41;
-        }
-        footer {
-            text-align: center;
-            padding: 2rem;
-            background-color: #333;
-            color: #fff;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f0f4f8;
+        color: #333;
+      }
+
+      header {
+        background-image: url('images/header-banner.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #005BBB;
+        padding: 4rem 2rem;
+        text-align: center;
+        position: relative;
+      }
+
+      header nav {
+        position: absolute;
+        top: 1rem;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+
+      nav li {
+        margin: 0 1rem;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      nav a:hover {
+        background-color: #555;
+      }
+
+      .flags {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        display: flex;
+      }
+
+      .flags img {
+        width: 4rem;
+        height: auto;
+        margin-left: 0.5rem;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      .flags img:hover {
+        transform: scale(1.1);
+      }
+
+      main {
+        padding: 3rem 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      section {
+        background-color: #fff;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+
+      h1 {
+        color: #005BBB;
+      }
+
+      button {
+        background-color: #005BBB;
+        color: #fff;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        display: block;
+        margin: 1rem auto;
+      }
+
+      button:hover {
+        background-color: #004a99;
+      }
+
+      .social-media {
+        text-align: center;
+        margin: 2rem 0;
+      }
+
+      .social-media a {
+        color: #333;
+        margin: 0 0.5rem;
+        text-decoration: none;
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
+      }
+
+      .social-media a:hover {
+        color: #005BBB;
+      }
+
+      .email-form label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+      }
+
+      .email-form input[type="text"],
+      .email-form input[type="email"],
+      .email-form textarea {
+        width: calc(100% - 1rem);
+        padding: 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+      }
+
+      .email-form textarea {
+        height: 8rem;
+      }
+
+      .email-form input[type="submit"] {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .email-form input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem;
+        background-color: #333;
+        color: #fff;
+        position: relative;
+      }
+
+      footer p {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+
+      .counter {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #005BBB;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 0 0.5rem;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#program">CUAET Program</a></li>
-                <li><a href="#resources">Resources</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
-        <div class="flags">
-            <p>🇺🇦</p>
-            <p>🇨🇦</p>
-        </div>
+      <div class="flags">
+        <p>🇨🇦</p>
+        <p>🇺🇦</p>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#about">About Us</a>
+          </li>
+          <li>
+            <a href="#program">CUAET Program</a>
+          </li>
+          <li>
+            <a href="#resources">Resources</a>
+          </li>
+          <li>
+            <a href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="flags">
+        <p>🇺🇦</p>
+        <p>🇨🇦</p>
+      </div>
     </header>
     <main>
-        <section id="hero">
-            <h1>Welcome to Ukrainians Relocation to Canada</h1>
-            <p>We help Ukrainians in Hungary to relocate to Canada through the CUAET program. This program offers a pathway to work and eventually permanent residency in Canada for eligible Ukrainian citizens.</p>
-            <button>Learn More</button>
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>We are a non-profit organization dedicated to helping Ukrainians in Hungary to relocate to Canada through the CUAET program. Our team of experts provide guidance and support every step of the way, from application preparation to settlement in Canada.</p>
-        </section>
-        <section id="program">
-            <h2>CUAET Program</h2>
-            <p>The CUAET (Canada-Ukraine Authorization for Emergency Travel) program is a unique initiative by the Canadian government to help Ukrainian citizens in Hungary and other European countries to come to Canada as temporary workers. The program offers a streamlined application process and work permits that can be extended, leading to permanent residency.</p>
-            <p>Key benefits of the CUAET program include:</p>
-            <ul>
-                <li><strong>Work permit:</strong> Eligible Ukrainian citizens can apply for an open work permit, which allows them to work in any occupation and for any employer in Canada.</li>
-                <li><strong>Eventual permanent residency:</strong> After working in Canada for a certain period, eligible applicants can apply for permanent residency.</li>
-                <li><strong>Access to healthcare and education:</strong> CUAET program participants have access to Canadian healthcare and education systems, ensuring a smooth transition to their new life in Canada.</li>
-                <li><strong>Faster processing times:</strong> The CUAET program offers faster processing times compared to regular work permit applications, allowing Ukrainians to start their new life in Canada sooner.</li>
-                <li><strong>Financial aid:</strong> The CUAET program offers financial aid. families are expected to receive CAN$3,000 for each adult (18 or older) and CAN$1,500 for each child (17 and under)</li>
-            </ul>
-        </section>
-        <section id="resources">
-            <h2>Resources</h2>
-            <p>Here are some resources to help you get started:</p>
-            <ul>
-                <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrant-portal/cuaet-program.html">CUAET Program Website</a></li>
-                <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrant-portal/cuaet-program/eligibility.html">CUAET Program Eligibility</a></li>
-                <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrant-portal/cuaet-program/application-process.html">CUAET Program Application Process</a></li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Have questions or need help with your application? Contact us:</p>
-            <form class="email-form" id="email-form">
-                <label for="full-name">Full Name:</label>
-                <input type="text" id="full-name" name="full-name" required>
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required>
-                <label for="email-message">Email Message:</label>
-                <textarea id="email-message" name="email-message" required></textarea>
-                <input type="submit" value="Send Email">
-            </form>
-        </section>
+      <section id="hero">
+    <h1>Welcome to Ukrainians Relocation to Canada</h1>
+    <p>We help Ukrainians in Hungary to relocate to Canada through the CUAET program. This program offers a pathway to work and eventually permanent residency in Canada for eligible Ukrainian citizens.</p>
+    <p>A new law has come into force in Hungary which threatens to push thousands of Ukrainian refugees onto the streets or back to Ukraine.</p>
+    <p>The regulation restricts state support for Ukrainians to those who come from parts of Ukraine directly affected by the fighting caused by Russia's invasion.</p>
+    <p>Relocating the families to Canada is the right solution for them. We remain committed to helping those fleeing Russia’s illegal and unjustifiable invasion of Ukraine. We continue working to provide Ukrainians with a temporary safe haven and the vital settlement services and supports they need to thrive in communities across Canada.</p>
+</section>
+      <section id="about">
+        <h2>About Us</h2>
+        <p>We are a non-profit organization dedicated to helping Ukrainians in Hungary to relocate to Canada through the CUAET program. Our team of experts provide guidance and support every step of the way, from application preparation to settlement in Canada.</p>
+      </section>
+      <section id="program">
+        <h2>CUAET Program</h2>
+        <p>The CUAET (Canada-Ukraine Authorization for Emergency Travel) program is a unique initiative by the Canadian government to help Ukrainian citizens in Hungary and other European countries to come to Canada as temporary workers. The program offers a streamlined application process and work permits that can be extended, leading to permanent residency.</p>
+        <p>Key benefits of the CUAET program include:</p>
+        <ul>
+          <li>
+            <strong>Work permit:</strong> Eligible Ukrainian citizens can apply for an open work permit, which allows them to work in any occupation and for any employer in Canada.
+          </li>
+          <li>
+            <strong>Eventual permanent residency:</strong> After working in Canada for a certain period, eligible applicants can apply for permanent residency.
+          </li>
+          <li>
+            <strong>Access to healthcare and education:</strong> CUAET program participants have access to Canadian healthcare and education systems, ensuring a smooth transition to their new life in Canada.
+          </li>
+          <li>
+            <strong>Faster processing times:</strong> The CUAET program offers faster processing times compared to regular work permit applications, allowing Ukrainians to start their new life in Canada sooner.
+          </li>
+          <li>
+            <strong>Financial aid:</strong> The CUAET program offers financial aid. families are expected to receive CAN$3,000 for each adult (18 or older) and CAN$1,500 for each child (17 and under)
+          </li>
+        </ul>
+      </section>
+      <section id="resources">
+        <h2>Resources</h2>
+        <p>Here are some resources to help you get started:</p>
+        <ul>
+          <li>
+            <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrant-portal/cuaet-program.html">CUAET Program Website</a>
+          </li>
+          <li>
+            <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrant-portal/cuaet-program/eligibility.html">CUAET Program Eligibility</a>
+          </li>
+          <li>
+            <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrant-portal/cuaet-program/application-process.html">CUAET Program Application Process</a>
+          </li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or need help with your application? Contact us:</p>
+        <form class="email-form" id="email-form">
+          <label for="full-name">Full Name:</label>
+          <input type="text" id="full-name" name="full-name" required>
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required>
+          <label for="email-message">Email Message:</label>
+          <textarea id="email-message" name="email-message" required></textarea>
+          <input type="submit" value="Send Email">
+        </form>
+      </section>
+      <section id="social-media">
+        <h2>Follow Us</h2>
+        <div class="social-media">
+          <a href="https://www.facebook.com/yourpage" target="_blank" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/yourprofile" target="_blank" title="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/yourprofile" target="_blank" title="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/@yourprofile" target="_blank" title="TikTok">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="https://www.reddit.com/user/yourusername" target="_blank" title="Reddit">
+            <i class="fab fa-reddit-alien"></i>
+          </a>
+          <a href="mailto:youremail@example.com" target="_blank" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </section>
     </main>
     <footer>
-        <p>Visitor Count: <span id="visitorCount">0</span></p>
-        <p>Families Reached: <span id="familiesReached">5</span></p>
+      <p>Visitor Count: <span class="counter" id="visitorCount">0</span>
+      </p>
+      <p>Families Reached: <span class="counter" id="familiesReached">5</span>
+      </p>
     </footer>
     <script>
-        let visitorCount = 200;
-        let familiesReached = 5;
-
-        window.onload = function() {
-            visitorCount++;
-            document.getElementById("visitorCount").innerHTML = visitorCount;
-        };
-
-        document.getElementById("email-form").addEventListener("submit", function(event) {
-            event.preventDefault();
-            familiesReached++;
-            document.getElementById("familiesReached").innerHTML = familiesReached;
-        });
+      let visitorCount = 200;
+      let familiesReached = 5;
+      window.onload = function() {
+        visitorCount++;
+        document.getElementById("visitorCount").innerHTML = visitorCount;
+      };
+      document.getElementById("email-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        familiesReached++;
+        document.getElementById("familiesReached").innerHTML = familiesReached;
+      });
     </script>
-</body>
+  </body>
 </html>
