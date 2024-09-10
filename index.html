@@ -48,6 +48,7 @@
 
       nav li {
         margin: 0 1rem;
+        text-align: left;
       }
 
       nav a {
@@ -336,7 +337,7 @@
     <h2>Spread the Word</h2>
     <p>Help us reach more families in need by sharing our website and email. Your support in spreading the word can make a huge difference!</p>
     <div class="share-options">
-        <p><strong>Website:</strong> <a href="https://cuaetforukraine.github.io/" target="_blank">https://cuaetforukraine.github.io/</a></p>
+        <p><strong>Website:</strong> <a href="https://cuaetforukraine.github.io/" target="_blank">cuaetforukraine.github.io</a></p>
         <p><strong>Email:</strong> <a href="mailto:cuaetforukraine@outlook.com">cuaetforukraine@outlook.com</a></p>
         <p>Share our website and email with your friends, family, and social networks to help us provide support to those who need it most.</p>
     </div>
@@ -373,21 +374,6 @@
           </li>
         </ul>
       </section>
-      <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Have questions or need help with your application? Contact us:</p>
-    <form class="email-form" id="email-form" method="post" action="mailto:cuaetforukraine@outlook.com" enctype="text/plain">
-        <label for="full-name">Full Name:</label>
-        <input type="text" id="full-name" name="full-name" required>
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" required>
-        <label for="email-message">Email Message:</label>
-        <textarea id="email-message" name="email-message" required></textarea>
-        <input type="submit" value="Send Email">
-    </form>
-</section>
       <section id="social-media">
         <h2>Follow Us</h2>
         <div class="social-media">
@@ -413,23 +399,10 @@
       </section>
     </main>
     <footer>
-      <p>Visitor Count: <span class="counter" id="visitorCount">0</span>
+      <p>Visitor Count: <span class="counter" id="visitorCount">210</span>
       </p>
       <p>Families Reached: <span class="counter" id="familiesReached">5</span>
       </p>
     </footer>
-    <script>
-      let visitorCount = 200;
-      let familiesReached = 5;
-      window.onload = function() {
-        visitorCount++;
-        document.getElementById("visitorCount").innerHTML = visitorCount;
-      };
-      document.getElementById("email-form").addEventListener("submit", function(event) {
-        event.preventDefault();
-        familiesReached++;
-        document.getElementById("familiesReached").innerHTML = familiesReached;
-      });
-    </script>
   </body>
 </html>
